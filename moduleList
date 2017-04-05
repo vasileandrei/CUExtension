@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="420dp"
+    android:layout_width="wrap_content">
+
+    <TextView
+        android:id="@+id/study_text_view"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_width="match_parent"
+        android:paddingLeft="48dp"
+        android:text="You are currently studying"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/real_world"
+        android:layout_below="@+id/study_text_view"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:layout_width="320dp"
+        android:text="206CDE - Real World Project" />
+
+    <Button
+        android:id="@+id/operating_system"
+        android:layout_below="@+id/real_world"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_width="320dp"
+        android:text="207SE - Operating Systems" />
+
+    <Button
+        android:id="@+id/software_eng"
+        android:layout_below="@+id/operating_system"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_width="320dp"
+        android:text="260CT - Software Engineering" />
+
+</RelativeLayout>
+
