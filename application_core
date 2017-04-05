@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relative_layout1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="64dp">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="32dp"
+            android:layout_marginRight="16dp">
+
+            <ImageView
+                android:id="@+id/folder"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_alignLeft="@+id/folder2"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/folder2"
+                android:clickable="true"
+                android:onClick="imageClick"
+                android:src="@drawable/folder" />
+
+            <TextView
+                android:id="@+id/folderTextView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/folder"
+                android:layout_marginLeft="16dp"
+                android:text="Week 1" />
+
+            <ImageView
+                android:id="@+id/folder2"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_below="@id/folder"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="32dp"
+                android:src="@drawable/folder" />
+
+            <TextView
+                android:id="@+id/folderTextView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/folder2"
+                android:layout_marginLeft="16dp"
+                android:text="Week 2" />
+
+            <ImageView
+                android:id="@+id/folder3"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_below="@id/folder2"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="32dp"
+
+                android:src="@drawable/folder" />
+
+            <TextView
+                android:id="@+id/folderTextView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/folder3"
+                android:layout_marginLeft="16dp"
+                android:text="Week 3" />
+
+            <ImageView
+                android:id="@+id/folder4"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_below="@id/folder3"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="32dp"
+                android:src="@drawable/folder" />
+
+            <TextView
+                android:id="@+id/folderTextView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/folder4"
+                android:layout_marginLeft="16dp"
+                android:text="Week 4" />
+
+            <ImageView
+                android:id="@+id/folder5"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_below="@id/folder4"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="32dp"
+
+                android:src="@drawable/folder" />
+
+            <TextView
+                android:id="@+id/folderTextView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/folder5"
+                android:layout_marginLeft="16dp"
+                android:text="Week 5" />
+
+            <ImageView
+                android:id="@+id/folder6"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_below="@id/folder5"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="32dp"
+                android:src="@drawable/folder" />
+
+            <TextView
+                android:id="@+id/folderTextView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/folder6"
+                android:layout_marginLeft="16dp"
+                android:text="Week 6" />
+
+            <ImageView
+                android:id="@+id/folder7"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_below="@id/folder6"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="32dp"
+                android:src="@drawable/folder" />
+
+            <TextView
+                android:id="@+id/folderTextView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/folder7"
+                android:layout_marginLeft="16dp"
+                android:text="Week 7" />
+
+            <ImageView
+                android:id="@+id/folder8"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_below="@id/folder7"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="32dp"
+                android:src="@drawable/folder" />
+
+            <TextView
+                android:id="@+id/folderTextView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/folder8"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:text="Week 8" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/scrollView2"
+        android:layout_toRightOf="@+id/scrollView2">
+
+        <TextView
+            android:id="@+id/user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:text="user" />
+
+        <TextView
+            android:id="@+id/module_choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_toLeftOf="@id/user"
+            android:text="206 - Real World Project" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_toEndOf="@+id/scrollView2"
+        android:layout_toRightOf="@+id/scrollView2">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/darker_gray" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:clickable="true"
+        android:onClick="addFile"
+        android:text="Add file" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/addButton"
+        android:layout_below="@+id/relativeLayout4"
+        android:layout_toEndOf="@+id/scrollView2"
+        android:layout_toRightOf="@+id/scrollView2"
+        android:visibility="invisible">
+
+        <RelativeLayout
+            android:id="@+id/mainWindowRelativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/addButton"
+            android:layout_below="@+id/relativeLayout4"
+            android:layout_toEndOf="@+id/scrollView2"
+            android:layout_toRightOf="@+id/scrollView2"
+            android:visibility="invisible">
+
+            <ImageView
+                android:id="@+id/timeLineImage"
+                android:layout_width="480dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="16dp"
+                app:srcCompat="@drawable/timelineline_burned" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/imageButton2"
+                android:layout_alignLeft="@+id/imageButton2"
+                android:layout_alignStart="@+id/imageButton2"
+                android:layout_marginLeft="12dp"
+                android:layout_marginStart="12dp"
+                app:srcCompat="@android:drawable/arrow_down_float" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/imageView4"
+                android:layout_alignLeft="@+id/imageButton2"
+                android:layout_alignStart="@+id/imageButton2"
+                android:text="Add file" />
+
+
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/timeLineImage"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="64dp"
+                android:layout_marginStart="52dp"
+                android:adjustViewBounds="false"
+                android:background="@android:drawable/screen_background_light_transparent"
+                android:cropToPadding="true"
+                android:onClick="turnOnModuleRelativeLayer"
+                android:paddingLeft="4dp"
+                app:srcCompat="@android:drawable/ic_input_get" />
+
+            <RelativeLayout
+                android:id="@+id/moduleRelativeLayout"
+                android:layout_width="420dp"
+                android:layout_height="320dp"
+                android:layout_above="@+id/textView"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="23dp"
+                android:layout_marginStart="23dp"
+                android:visibility="invisible">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentTop="true"
+                    android:background="@android:color/darker_gray" />
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@android:color/darker_gray" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:background="@android:color/darker_gray" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:background="@android:color/darker_gray" />
+
+                <ScrollView
+                    android:id="@+id/scrollView3"
+                    android:layout_width="64dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="240dp">
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="240dp"
+                            android:layout_alignParentRight="true"
+                            android:background="@android:color/darker_gray" />
+
+                        <ImageView
+                            android:id="@+id/module"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_alignLeft="@+id/module2"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignStart="@+id/module2"
+                            android:onClick="imageClickClick"
+                            android:src="@drawable/folder" />
+
+                        <TextView
+                            android:id="@+id/moduleTextView1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/module"
+                            android:layout_marginLeft="16dp"
+                            android:text="Module 1"
+                            android:textSize="10sp" />
+
+                        <ImageView
+                            android:id="@+id/module2"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_below="@id/module"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="32dp"
+                            android:src="@drawable/folder" />
+
+                        <TextView
+                            android:id="@+id/moduleTextView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/module2"
+                            android:layout_marginLeft="16dp"
+                            android:text="Module 2"
+                            android:textSize="10sp" />
+
+                        <ImageView
+                            android:id="@+id/module3"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_below="@id/module2"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="32dp"
+                            android:src="@drawable/folder" />
+
+                        <TextView
+                            android:id="@+id/moduleTextView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/module3"
+                            android:layout_marginLeft="16dp"
+                            android:text="Module 3"
+                            android:textSize="10sp" />
+
+                        <ImageView
+                            android:id="@+id/module4"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_below="@id/module3"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="32dp"
+
+                            android:src="@drawable/folder" />
+
+                        <TextView
+                            android:id="@+id/moduleTextView4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/module4"
+                            android:layout_marginLeft="16dp"
+                            android:text="Module 4"
+                            android:textSize="10sp" />
+
+                        <ImageView
+                            android:id="@+id/module5"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_below="@id/module4"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="32dp"
+                            android:src="@drawable/folder" />
+
+                        <TextView
+                            android:id="@+id/moduleTextView5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/module5"
+                            android:layout_marginLeft="16dp"
+                            android:text="Module 5"
+                            android:textSize="10sp" />
+
+
+                    </RelativeLayout>
+
+                </ScrollView>
+
+                <ScrollView
+                    android:id="@+id/filesScroll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/view"
+                    android:layout_centerHorizontal="true"
+                    android:visibility="invisible">
+
+                    <RelativeLayout
+                        android:id="@+id/filesLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/scrollView3"
+                        android:layout_toRightOf="@+id/scrollView3"
+                        android:visibility="invisible">
+
+                        <ImageView
+                            android:id="@+id/documentImage1"
+                            android:layout_width="42dp"
+                            android:layout_height="42dp"
+                            android:layout_marginLeft="58dp"
+                            android:layout_marginTop="20dp"
+                            android:src="@drawable/documentfile" />
+
+                        <TextView
+                            android:id="@+id/documentText1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/documentImage1"
+                            android:layout_marginLeft="42dp"
+                            android:layout_marginTop="4dp"
+                            android:text="Document 1" />
+
+                        <ImageView
+                            android:id="@+id/documentImage2"
+                            android:layout_width="42dp"
+                            android:layout_height="42dp"
+                            android:layout_below="@id/documentText1"
+                            android:layout_marginLeft="58dp"
+                            android:layout_marginTop="20dp"
+                            android:src="@drawable/documentfile"
+                            android:onClick="documentClicked"/>
+
+                        <TextView
+                            android:id="@+id/documentText2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/documentImage2"
+                            android:layout_marginLeft="42dp"
+                            android:layout_marginTop="4dp"
+                            android:text="Document 2" />
+
+                        <ImageView
+                            android:id="@+id/documentImage3"
+                            android:layout_width="42dp"
+                            android:layout_height="42dp"
+                            android:layout_below="@id/documentText2"
+                            android:layout_marginLeft="58dp"
+                            android:layout_marginTop="20dp"
+                            android:src="@drawable/documentfile" />
+
+                        <TextView
+                            android:id="@+id/documentText3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/documentImage3"
+                            android:layout_marginLeft="42dp"
+                            android:layout_marginTop="4dp"
+                            android:text="Document 3" />
+
+                        <ImageView
+                            android:id="@+id/documentImage4"
+                            android:layout_width="42dp"
+                            android:layout_height="42dp"
+                            android:layout_below="@id/documentText3"
+                            android:layout_marginLeft="58dp"
+                            android:layout_marginTop="20dp"
+                            android:src="@drawable/documentfile" />
+
+                        <TextView
+                            android:id="@+id/documentText4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/documentImage4"
+                            android:layout_marginLeft="42dp"
+                            android:layout_marginTop="4dp"
+                            android:text="Document 4" />
+
+                        <ImageView
+                            android:id="@+id/documentImage5"
+                            android:layout_width="42dp"
+                            android:layout_height="42dp"
+                            android:layout_marginLeft="58dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_toRightOf="@id/documentText1"
+                            android:src="@drawable/documentfile" />
+
+                        <TextView
+                            android:id="@+id/documentText5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/documentImage5"
+                            android:layout_marginLeft="42dp"
+                            android:layout_marginTop="4dp"
+                            android:layout_toRightOf="@id/documentText1"
+                            android:text="Document 5" />
+
+                        <ImageView
+                            android:id="@+id/documentImage6"
+                            android:layout_width="42dp"
+                            android:layout_height="42dp"
+                            android:layout_below="@id/documentImage5"
+                            android:layout_marginLeft="68dp"
+                            android:layout_marginTop="42dp"
+                            android:layout_toRightOf="@id/documentImage2"
+                            android:src="@drawable/documentfile" />
+
+                        <TextView
+                            android:id="@+id/documentText6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/documentImage6"
+                            android:layout_marginLeft="152dp"
+                            android:layout_marginTop="4dp"
+                            android:text="Document 6" />
+
+                    </RelativeLayout>
+                </ScrollView>
+            </RelativeLayout>
+
+            <Button
+                android:text="Select File"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/selectButton"
+                android:visibility="invisible"
+                android:layout_above="@+id/imageButton2"
+                android:layout_alignRight="@+id/moduleRelativeLayout"
+                android:layout_alignEnd="@+id/moduleRelativeLayout" />
+        </RelativeLayout>
+    </HorizontalScrollView>
+</RelativeLayout>
