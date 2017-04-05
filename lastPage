@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="16dp">
+
+            <ImageView
+                android:id="@+id/folder"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_alignLeft="@+id/folder2"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/folder2"
+                android:clickable="true"
+                android:onClick="imageClick"
+                android:src="@drawable/folder" />
+
+            <TextView
+                android:id="@+id/folderTextView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/folder"
+                android:layout_marginLeft="16dp"
+                android:text="Week 1" />
+
+            <ImageView
+                android:id="@+id/folder2"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_below="@id/folder"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="32dp"
+                android:src="@drawable/folder" />
+
+            <TextView
+                android:id="@+id/folderTextView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/folder2"
+                android:layout_marginLeft="16dp"
+                android:text="Week 2" />
+
+            <ImageView
+                android:id="@+id/folder3"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_below="@id/folder2"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="32dp"
+                android:src="@drawable/folder" />
+
+            <TextView
+                android:id="@+id/folderTextView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/folder3"
+                android:layout_marginLeft="16dp"
+                android:text="Week 3" />
+
+            <ImageView
+                android:id="@+id/folder4"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_below="@id/folder3"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="32dp"
+                android:src="@drawable/folder" />
+
+            <TextView
+                android:id="@+id/folderTextView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/folder4"
+                android:layout_marginLeft="16dp"
+                android:text="Week 4" />
+
+            <ImageView
+                android:id="@+id/folder5"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_below="@id/folder4"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="32dp"
+
+                android:src="@drawable/folder" />
+
+            <TextView
+                android:id="@+id/folderTextView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/folder5"
+                android:layout_marginLeft="16dp"
+                android:text="Week 5" />
+
+            <ImageView
+                android:id="@+id/folder6"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_below="@id/folder5"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="32dp"
+                android:src="@drawable/folder" />
+
+            <TextView
+                android:id="@+id/folderTextView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/folder6"
+                android:layout_marginLeft="16dp"
+                android:text="Week 6" />
+
+            <ImageView
+                android:id="@+id/folder7"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_below="@id/folder6"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="32dp"
+                android:src="@drawable/folder" />
+
+            <TextView
+                android:id="@+id/folderTextView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/folder7"
+                android:layout_marginLeft="16dp"
+                android:text="Week 7" />
+
+            <ImageView
+                android:id="@+id/folder8"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_below="@id/folder7"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="32dp"
+                android:src="@drawable/folder" />
+
+            <TextView
+                android:id="@+id/folderTextView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/folder8"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:text="Week 8" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:clickable="true"
+        android:onClick="addFile"
+        android:text="Add file" />
+
+    <RelativeLayout
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/scrollView2"
+        android:layout_above="@+id/addButton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <Button
+            android:text="Publish to Moodle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/publishButton"
+            android:onClick="showPicture"
+            android:layout_below="@+id/editText2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="21dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter name of Revision"
+            android:id="@+id/editText2"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="156dp" />
+
+        <Button
+            android:text="Edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editButton"
+            android:layout_marginTop="12dp"
+            android:layout_below="@+id/publishButton"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:text="Delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/deleteButton"
+            android:layout_marginTop="12dp"
+            android:layout_below="@+id/editButton"
+            android:layout_alignLeft="@+id/editButton"
+            android:layout_alignStart="@+id/editButton" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
