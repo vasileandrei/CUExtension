@@ -1,0 +1,18 @@
+package com.android;
+
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+
+import com.example.android.cuextension.R;
+
+/**
+ * Created by ANDREI on 30-Mar-17.
+ */
+
+public class moodlePreview extends AppCompatActivity {
+
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_moodle_preview);
+    }
+}
