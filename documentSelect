@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relative_layout1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:text="user" />
+
+        <TextView
+            android:id="@+id/module_choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="64dp"
+            android:layout_marginTop="16dp"
+            android:layout_toLeftOf="@id/user"
+            android:text="206 - Real World Project - Document 2" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="40dp"
+            android:background="@android:color/darker_gray" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/timeLineImage"
+        android:layout_width="480dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        app:srcCompat="@drawable/timelineline_burned" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="42dp"
+        android:paddingLeft="24dp"
+        android:src="@android:drawable/ic_input_get" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="28dp"
+        android:paddingLeft="30dp"
+        android:src="@android:drawable/arrow_down_float" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@id/imageView"
+        android:background="@android:color/darker_gray" />
+
+    <RelativeLayout
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_above="@+id/imageView"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/relativeLayout2">
+
+        <ScrollView
+            android:id="@+id/scrollView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="0dp">
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_marginLeft="108dp"
+                    android:layout_height="756dp"
+                    android:background="@android:color/darker_gray" />
+
+                <ImageView
+                    android:id="@+id/firstDoc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="16dp"
+                    app:srcCompat="@drawable/documentfile"
+                    android:onClick="openFile"/>
+
+                <ImageView
+                    android:id="@+id/secondDoc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/firstDoc"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="16dp"
+                    app:srcCompat="@drawable/documentfile" />
+
+                <ImageView
+                    android:id="@+id/thirdDoc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/secondDoc"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="16dp"
+                    app:srcCompat="@drawable/documentfile" />
+
+                <ImageView
+                    android:id="@+id/fourthDoc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/thirdDoc"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="16dp"
+                    app:srcCompat="@drawable/documentfile" />
+
+                <ImageView
+                    android:id="@+id/fifthDoc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/fourthDoc"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="16dp"
+                    app:srcCompat="@drawable/documentfile" />
+
+                <ImageView
+                    android:id="@+id/sixthDoc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/fifthDoc"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="16dp"
+                    app:srcCompat="@drawable/documentfile" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/sixthDoc"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="16dp"
+                    app:srcCompat="@drawable/documentfile" />
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+        <ScrollView
+            android:id="@+id/scrollView4"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="64dp"
+            android:layout_marginLeft="164dp">
+
+            <RelativeLayout
+                android:id="@+id/pagesLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible">
+
+                <ImageView
+                    android:id="@+id/pageOne"
+                    android:layout_width="120dp"
+                    android:layout_height="140dp"
+                    android:layout_centerHorizontal="true"
+                    app:srcCompat="@drawable/documentfile" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="200dp"
+                    android:layout_marginTop="48dp"
+                    android:text="1st page" />
+
+                <ImageView
+                    android:id="@+id/pageTwo"
+                    android:layout_width="120dp"
+                    android:layout_height="140dp"
+                    android:layout_below="@id/pageOne"
+                    android:layout_centerHorizontal="true"
+                    app:srcCompat="@drawable/documentfile" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="200dp"
+                    android:layout_marginTop="188dp"
+                    android:text="2nd page" />
+
+                <ImageView
+                    android:id="@+id/pageThree"
+                    android:layout_width="120dp"
+                    android:layout_height="140dp"
+                    android:layout_below="@id/pageTwo"
+                    android:layout_centerHorizontal="true"
+                    app:srcCompat="@drawable/documentfile" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="200dp"
+                    android:layout_marginTop="332dp"
+                    android:text="3rd page" />
+
+                <ImageView
+                    android:id="@+id/pageFour"
+                    android:layout_width="120dp"
+                    android:layout_height="140dp"
+                    android:layout_below="@id/pageThree"
+                    android:layout_centerHorizontal="true"
+                    app:srcCompat="@drawable/documentfile" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="200dp"
+                    android:layout_marginTop="464dp"
+                    android:text="4th page" />
+
+                <ImageView
+                    android:id="@+id/pageFive"
+                    android:layout_width="120dp"
+                    android:layout_height="140dp"
+                    android:layout_below="@id/pageFour"
+                    android:layout_centerHorizontal="true"
+                    app:srcCompat="@drawable/documentfile" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="200dp"
+                    android:layout_marginTop="612dp"
+                    android:text="5th page" />
+
+                <ImageView
+                    android:id="@+id/pageSix"
+                    android:layout_width="120dp"
+                    android:layout_height="140dp"
+                    android:layout_below="@id/pageFive"
+                    android:layout_centerHorizontal="true"
+                    app:srcCompat="@drawable/documentfile" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="200dp"
+                    android:layout_marginTop="748dp"
+                    android:text="6th page" />
+
+                <ImageView
+                    android:id="@+id/pageSeven"
+                    android:layout_width="120dp"
+                    android:layout_height="140dp"
+                    android:layout_below="@id/pageSix"
+                    android:layout_centerHorizontal="true"
+                    app:srcCompat="@drawable/documentfile" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="200dp"
+                    android:layout_marginTop="880dp"
+                    android:text="7th page" />
+
+                <ImageView
+                    android:id="@+id/pageEight"
+                    android:layout_width="120dp"
+                    android:layout_height="140dp"
+                    android:layout_below="@id/pageSeven"
+                    android:layout_centerHorizontal="true"
+                    app:srcCompat="@drawable/documentfile" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="200dp"
+                    android:layout_marginTop="1022dp"
+                    android:text="8th page" />
+
+                <ImageView
+                    android:id="@+id/pageNine"
+                    android:layout_width="120dp"
+                    android:layout_height="140dp"
+                    android:layout_below="@id/pageEight"
+                    android:layout_centerHorizontal="true"
+                    app:srcCompat="@drawable/documentfile" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="200dp"
+                    android:layout_marginTop="1174dp"
+                    android:text="9th page" />
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout3"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_toEndOf="@+id/scrollView5"
+            android:layout_toRightOf="@+id/scrollView5">
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <Button
+                android:id="@+id/addCurrentButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add current"
+                android:onClick="addCurrent"/>
+
+            <Button
+                android:id="@+id/addAllButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/addCurrentButton"
+                android:text="Add all " />
+
+            <Button
+                android:id="@+id/finalizeButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/button"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:text="Finalize"
+                android:onClick="goOnNextPage"/>
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="72dp"
+        app:srcCompat="@drawable/folderimage_burned"
+        android:id="@+id/pageOneOnTimeline"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="88dp"
+        android:paddingBottom="12dp"
+        android:visibility="invisible"/>
+
+</RelativeLayout>
