@@ -1,0 +1,62 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/cu_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/cu_logo" />
+
+    <TextView
+        android:id="@+id/sign_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cu_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="Sign in"
+        android:textSize="32sp" />
+
+    <TextView
+        android:id="@+id/text_view_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sign_in"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="with Coventry University account" />
+
+    <EditText
+        android:id="@+id/edit_text_1"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_1"
+        android:layout_centerHorizontal="true"
+        android:hint="Enter your email here"
+        android:layout_marginTop="48dp" />
+
+    <EditText
+        android:id="@+id/edit_text_2"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_text_1"
+        android:layout_centerHorizontal="true"
+        android:hint="Enter your password here"
+        android:paddingTop="12dp" />
+
+
+    <Button
+        android:id="@+id/signInButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_text_2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="78dp"
+        android:text="Sign in" />
+
+</RelativeLayout>
